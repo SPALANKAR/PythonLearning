@@ -4,15 +4,17 @@ Fibonacci Series using range
 
 a=1
 b=1
-record = int(input("Enter Value \n"))
 print(a)
 print(b)
-
-
-for i in range(2,record):
-    c=a+b
-    a=b
-    b=c
-    print(c)
+count=0
+while count < 3:
+    a=a+b
+    print(a)
+    b=a+b
+    print(b)
+    count+=1
+else:   
+    b=a+b
+    print(b)
 
 
